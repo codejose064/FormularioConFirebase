@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Img/icono.svg" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,200,0,-25" />
+    <link rel="stylesheet" href="style.css">
+
+    <!--CDN de la librerua de SWEETALERT2-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!--CONECCION DE LOS DOCUMENTOS PARA CONECCION Y ENVIO DE DETOS A FIREBASE-->
+    <script type="module" src="Js/firebaseConnect.js"></script>
+    <script type="module" src="Js/formulario.js"></script>
+    <title>Formulario - Js</title>
+</head>
+
+<body>
+    <div class="container">
+        <form id="miFormulario">
+            <fieldset>
+                <legend>Mi Fomulario de Prueba en Firebase</legend>
+                <div class="dato_input">
+                    <span class="material-symbols-outlined">
+                        assignment_ind
+                    </span>
+                    <input id="dni" type="text" placeholder="Dni" maxlength="8" autocomplete="off">
+                </div>
+                <div class="dato_input">
+                    <span class="material-symbols-outlined">
+                        person
+                    </span>
+                    <input id="nombre" type="text" placeholder="Nombre" maxlength="30" autocomplete="off">
+                </div>
+                <div class="dato_input">
+                    <span class="material-symbols-outlined">
+                        badge
+                    </span>
+                    <input id="apellido" type="text" placeholder="Apellido" maxlength="30" autocomplete="off">
+                </div>
+                <div class="dato_input">
+                    <span class="material-symbols-outlined">
+                        calendar_month
+                    </span>
+                    <input id="fecha" type="date" maxlength="30" autocomplete="off">
+                </div>
+                <div class="dato_input">
+                    <span class="material-symbols-outlined">
+                        location_on
+                    </span>
+                    <input id="direccion" type="text" placeholder="Dirección" maxlength="50" autocomplete="off">
+                </div>
+                <div class="btn__formulario">
+                    <input type="submit" value="Enviar Datos">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

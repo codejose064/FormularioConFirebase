@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;900&family=Open+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inconsolata', monospace;
+    display: grid;
+    height: 100vh;
+    margin: 0;
+    place-items: center;
+}
+
+.container {
+    max-width: 600px;
+    padding: 2rem;
+}
+
+.container form {
+    padding: 1rem;
+}
+
+.container form fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.container form fieldset legend {
+    text-align: center;
+    padding: 0 1rem;
+    color: gray;
+}
+
+.container form fieldset .dato_input,  .btn__formulario {
+    display: flex;
+    justify-content: center;
+    padding: .5rem .5rem 0 .5rem;
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+.container form fieldset .btn__formulario{
+    border:  none;
+} 
+
+.container form fieldset .dato_input span{
+    color: gray;
+}
+
+.container form fieldset .dato_input input {
+    display: inline-block;
+    width: 90%;
+    padding: 0.2rem 0.2rem 0.2rem .8rem;
+    border: none;
+    color: gray;
+    background: transparent;
+}
+
+.container form fieldset .dato_input input:focus {
+    outline: none;
+}
+
+.container form fieldset .btn__formulario input{
+    width: 60%;
+    background-color: rgb(231, 231, 231);
+    padding: .3rem;
+    color: gray;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.container form fieldset .btn__formulario input:hover{
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
